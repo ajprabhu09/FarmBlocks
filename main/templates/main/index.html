@@ -29,40 +29,42 @@
     </div>
   </nav> -->
    <nav class="nav-extended">
+    <!-- <p class="flow-text teal">I am Flow Text</p> -->
     <div class="nav-wrapper teal">
+      <h5 class="teal left">
+        Balance:
+        {{balance}} LBC
+      </h5>
       <a href="#" class="brand-logo right">FarmBlocks
-        <img src="static 'main/images/logo.png'">
+        <img src="{% static 'main/images/logo.png' %}" height="32" width="32">
       </a>
      
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
+      
     </div>
     <div class="nav-content teal">
       <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="#test1">Home</a></li>
-        <li class="tab"><a class="active" href="#test2">Products</a></li>
-        <li class="tab disabled"><a href="#test3">register</a></li>
-        <li class="tab"><a href="#test4">Manufacturer</a></li>
+        <li class="tab"><a href="/">Home</a></li>
+        <li class="tab"><a class="active" href="/products">Products</a></li>
+        <li class="tab disabled"><a href="/register">register</a></li>
+        <li class="tab"><a href="/manf">Manufacturer</a></li>
       </ul>
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="collapsible.html">JavaScript</a></li>
-  </ul>
+  
 
-  <div id="test1" class="col s12">Test 1</div>
+<!--   <div id="test1" class="col s12">Test 1</div>
   <div id="test2" class="col s12">Test 2</div>
   <div id="test3" class="col s12">Test 3</div>
-  <div id="test4" class="col s12">Test 4</div>        
+  <div id="test4" class="col s12">Test 4</div>        --> 
 
 
 
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red" href="/upload">
+    <i class="large material-icons">cloud_upload</i>
+  </a>
+</div>  
 
 <!-- Search bar -->
 

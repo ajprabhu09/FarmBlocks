@@ -1,0 +1,18 @@
+{% extends 'main/index.html'%}
+
+
+ {% block content %}
+    
+    {% for i in contents %}
+      <div class="col">
+        <div class="col s12 m6">
+          <div class="card blue">
+            <div class="card-content black-text">
+              <span class="card-title"><strong>{{i.0}}</strong></span>
+              <p>{{i.1|safe}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  {% endblock %}
