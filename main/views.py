@@ -20,7 +20,7 @@ def homepage(request):
 	else:
 		return render(request,'main/index.html',context={'balance':-1})
 def products(request):
-	return render
+	return render(request,'main/products.html',context={})
 
 def commit_to_block_chain(filename):
 	print("PUBLISHING TO BLOCKCHAIN....",end='')
@@ -71,3 +71,6 @@ def upload(request):
 	else:
 		form = UploadFileForm()
 		return render(request,'main/upload.html',{'form':form})
+
+def manf(request):
+	return render(request,'main/manf.html',{})
